@@ -1,0 +1,32 @@
+.loader {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #ecf0f0;
+    border-radius: 10px;
+    border-top-color: blueviolet;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.universe {
+opacity: 0;
+animation: fadeIn 3s;
+animation-delay: 5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
