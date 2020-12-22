@@ -1,0 +1,91 @@
+@media (max-width: 599px) {
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: navajowhite;
+}
+
+.header__location {
+    background-color: #ecf0f0;
+}
+
+.header__menu img {
+    width: 100%;
+
+}
+
+.section1 {
+    background-color: papayawhip;
+}
+
+.btn__menu {
+    background-color: navajowhite;
+    border-radius: 15px;
+    padding-left: 5px;;
+}
+
+.btn__order {
+    background-color:#ff79da;
+    font-size: 24px;
+    color: white;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 11px;
+    width: 50%;
+    margin: 15px 25% 15px 25%;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 3px 4px 0 #9a9c9a;
+    transition: 0.3s;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.card--third .nyami{
+    height: 250px;
+    justify-content: stretch;
+}
+
+.nyami {
+    width: 100%;
+}
+
+.container2 {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.section2 h3 {
+    padding-left: 10px;
+    font-size: 28px;
+}
+
+.footer {
+    background-color: paleturquoise;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer__logo {
+    width: 100%;
+    text-align: left;
+    transform: scale(0.9);
+    padding: 0;
+}
+
+
+}
