@@ -5,9 +5,39 @@ body {
 }
 
 .logo {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.index__logo {
+    justify-content: center;
+}
+
+.menu__logo {
+    padding-left: 32px;
+}
+
+.top__arrow {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 70px;
+    padding-top: 10px;
+    margin: 0;
+    text-decoration: none;
+    color:rgb(26, 25, 25);
+}
+
+.top__arrow:hover {
+    cursor: pointer;
+}
+
+.logo h5 {
+    font-family: 'Shrikhand';
+    color: rgb(26, 25, 25);
+    font-size: 32px;
+    margin: 0;
 }
 
 .header {
