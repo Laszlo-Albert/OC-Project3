@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6d460ba27d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="loader.css"> -->
     <title>OhMyFood</title>
 </head>
 <body>
+        <!-- <div class="loader"></div>
+    <div class="universe"> -->
     <div class="logo">
         <img src="images/ohmyfood2.svg.svg" alt="servicelogo">
     </div>
     <header class="header">
         <div class="header__location">
-            <i class="fas fa-map-marker-alt"></i>Paris, Belleville
+            <i class="fas fa-map-marker-alt"></i>  Paris, Belleville
         </div>
-        <div>
+        <div class="booking">
             <h2><b>Book the menu you like</b></h2>
-            <h4>Discover top-of-the-line restaurants we picked for you</h4>
+            <p>Discover top-of-the-line restaurants we <br> picked for you</p>
             <div class="btn__explore">Explore our restaurants</div>
         </div>        
     </header>
@@ -25,9 +30,9 @@
     <section>
         <div class="section1">
             <h3>How it works</h3>
-            <div class="btn btn__selection">Chose a restaurant</div>
-            <div class="btn btn__selection">Create your menu</div>
-            <div class="btn btn__selection">Go enjoy it at the restaurant</div>
+            <div class="btn btn__selection"><i class="fas fa-mobile-alt"></i> Choose a restaurant</div>
+            <div class="btn btn__selection"><i class="fas fa-list-ul"></i> Create your menu</div>
+            <div class="btn btn__selection"><i class="fas fa-utensils"></i> Go enjoy it at the restaurant</div>
         </div>       
     </section>
 
@@ -72,15 +77,17 @@
             </a>   
         </div>
     </section>
+    <!-- </div> -->
 
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__logo"><img src="images/ohmyfood2.svg.svg" alt="small logo"></div>
+            <h5>ohmyfood</h5>
+            <!-- <div class="footer__logo"><img src="images/ohmyfood2.svg.svg" alt="small logo"></div> -->
             <ul>
-                <li>Suggest a Restaurant</li>
-                <li>Become a partner</li>
+                <li><i class="fas fa-utensils"></i>  Suggest a Restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>  Become a partner</li>
                 <li>Legal</li>
-                <li>Contact</li>
+                <li><a href="mailto:support@ohmyfood.com">Contact</a></li>
             </ul>
         </div>
     </footer>
