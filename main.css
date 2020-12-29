@@ -167,6 +167,16 @@ h3 {
     z-index: 1;
 }
 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ .fadeIn {
+     animation-name: fadeIn;
+     animation-duration: 3s;
+ }
+
 .btn__menu::after {
     content: '';
     position: absolute;
@@ -176,7 +186,7 @@ h3 {
     height: 100%;
     background: #99E2D0;
     z-index: -1;
-    transition: transform 500ms ease-in;
+    transition: transform 200ms ease-in;
 }
 
 .btn__menu--1::after {
