@@ -1,4 +1,4 @@
-@media (max-width: 599px) {
+@media (min-width: 360px) and (max-width: 599px) {
 
 body {
     font-family: 'Roboto';
@@ -223,13 +223,24 @@ h3 {
     height: 400px;
 }
 
+.fa-2x {
+    padding-left: 300px;
+    animation: slideIn 3s;
+}
+
+@keyframes slideIn {
+        from { transform: scaleX(0); }
+        to   { transform: scaleX(1); }
+      }
+
 .card--third .nyami{
-    height: 250px;
+    height: 70%;
     justify-content: stretch;
 }
 
 .nyami {
     width: 100%;
+    height: 70%;
 }
 
 .container2 {
@@ -281,4 +292,630 @@ ul a {
     padding: 15px 0 5px 20px;
     margin: 0;
 }
+}
+
+
+@media (min-width: 600px) and (max-width: 1199px) {    /* 000000000000000000000000000000000000000000000000 */
+
+    body {
+        font-family: 'Roboto';
+    }
+    
+    .header__menu img {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+    
+    .page1__section1 {
+        background-color: rgb(238, 238, 238);
+        display: flex;
+        flex-direction: column;
+        border-radius: 35px;
+    }
+    
+    h3 {
+        font-family: 'Shrikhand';
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-size: 32px;
+        margin: 0;
+    }
+    
+    .menusection {
+        font-size: 45px;
+    }
+    
+    .page1__section1 h4 {
+        padding-left: 20px;
+        padding-top: 10px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    .btn__menu {
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .btn__menu h4 {
+        text-transform: none;
+    }
+    
+    .btn__menu p {
+        padding-left: 20px;
+        margin: 2px;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    
+    .index__logo {
+        justify-content: center;
+    }
+    
+    .menu__logo {
+        padding-left: 32px;
+    }
+    
+    .top__arrow {
+        text-align: left;
+        font-size: 30px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 10px;
+        margin: 0;
+        text-decoration: none;
+        color:rgb(26, 25, 25);
+    }
+    
+    .top__arrow:hover {
+        cursor: pointer;
+    }
+    
+    .logo h5 {
+        font-family: 'Shrikhand';
+        color: rgb(26, 25, 25);
+        font-size: 32px;
+        margin: 0;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(233, 233, 233);
+    }
+    
+    .header__location {
+        background-color: #d5d8d8;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .booking h2 {
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .booking p {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .btn__explore {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        align-content: center;
+        height: 25px;
+        width: 40%;
+        margin: 30px 30% 40px 30%;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px #babdbd;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    }
+    
+    .section1 {
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    .section1 h3 {
+        padding-left: 20px;
+        font-size: 26px;
+    }
+    
+    .btn__selection {
+        background-color: whitesmoke;
+        padding-top: 30px;
+        text-align: left;
+        font-weight: bold;
+        height: 50px;
+        width: 80%;
+        margin: 5px 10% 15px 10%;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px #babdbd;
+    }
+    
+    .btn__selection:hover {
+        background-color: rgb(255, 203, 255);
+        cursor: pointer;
+    }
+    
+    .btn__selection i {
+        padding-right: 10px;
+        padding-left: 40px;
+    }
+    
+    .btn__menu {
+        background-color: rgb(250, 250, 250);
+        border-radius: 15px;
+        padding-left: 5px;
+        box-shadow: 5px 5px 20px #babdbd;
+        position: relative;
+        z-index: 1;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+    
+     .fadeIn {
+         animation-name: fadeIn;
+         animation-duration: 3s;
+     }
+    
+    .btn__menu::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #99E2D0;
+        z-index: -1;
+        transition: transform 200ms ease-in;
+    }
+    
+    .btn__menu--1::after {
+        transform: scaleX(0);
+        transform-origin: right;
+        border-radius: 1px 15px 15px 1px;
+    }
+    
+    .btn__menu--1:hover::after {
+        transform: scaleX(0.1);
+    }
+    
+        
+    .btn__order {
+        font-size: 24px;
+        color: white;
+        height: 40px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 11px;
+        width: 50%;
+        margin: 15px 25% 50px 25%;
+        box-shadow: 5px 5px 20px #babdbd;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    }
+    
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 3px 4px 0 #9a9c9a;
+        transition: 0.3s;
+        padding: 0;
+        margin: 10px;
+        overflow: hidden;
+        height: 400px;
+    }
+    
+    .fa-2x {
+        padding-left: 300px;
+        animation: slideIn 3s;
+    }
+    
+    @keyframes slideIn {
+            from { transform: scaleX(0); }
+            to   { transform: scaleX(1); }
+          }
+    
+    .card--third .nyami{
+        height: 70%;
+        justify-content: stretch;
+    }
+    
+    .nyami {
+        width: 100%;
+        height: 70%;
+    }
+    
+    .container2 {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    
+    .container2 h4, p {
+        color: black;
+    }
+    
+    .section2 h3 {
+        padding-left: 20px;
+        font-size: 26px;
+    }
+    
+    .section2 a {
+        text-decoration: none;
+    }
+    
+    .footer {
+        background-color: rgb(26, 25, 25);
+        color: rgb(235, 227, 227);
+    }
+    
+    .footer ul {
+        list-style: none;
+        padding: 5px 0px 15px 20px;
+        line-height: 25px;
+    }
+    
+    ul .fa-utensils {
+        padding-right: 11px;
+    }
+    
+    ul .fa-hands-helping {
+        padding-right: 5px;
+    }
+    
+    ul a {
+        text-decoration: none;
+        color: rgb(235, 227, 227);
+    }
+    
+    .footer h5 {
+        color: rgb(235, 227, 227);
+        font-family: 'Shrikhand';
+        font-size: 22px;
+        padding: 15px 0 5px 20px;
+        margin: 0;
+    }
+    } 
+
+@media (min-width: 1200px) {      /* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
+    body {
+        font-family: 'Roboto';
+    }
+    
+    .header__menu img {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+    
+    .page1__section1 {
+        background-color: rgb(238, 238, 238);
+        display: flex;
+        flex-direction: column;
+        border-radius: 35px;
+    }
+    
+    h3 {
+        font-family: 'Shrikhand';
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-size: 32px;
+        margin: 0;
+    }
+    
+    .menusection {
+        font-size: 45px;
+    }
+    
+    .page1__section1 h4 {
+        padding-left: 20px;
+        padding-top: 10px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    .btn__menu {
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .btn__menu h4 {
+        text-transform: none;
+    }
+    
+    .btn__menu p {
+        padding-left: 20px;
+        margin: 2px;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    
+    .index__logo {
+        justify-content: center;
+    }
+    
+    .menu__logo {
+        padding-left: 32px;
+    }
+    
+    .top__arrow {
+        text-align: left;
+        font-size: 30px;
+        padding-left: 30px;
+        padding-right: 70px;
+        padding-top: 10px;
+        margin: 0;
+        text-decoration: none;
+        color:rgb(26, 25, 25);
+    }
+    
+    .top__arrow:hover {
+        cursor: pointer;
+    }
+    
+    .logo h5 {
+        font-family: 'Shrikhand';
+        color: rgb(26, 25, 25);
+        font-size: 32px;
+        margin: 0;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(233, 233, 233);
+    }
+    
+    .header__location {
+        background-color: #d5d8d8;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .booking h2 {
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .booking p {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .btn__explore {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        align-content: center;
+        height: 25px;
+        width: 40%;
+        margin: 30px 30% 40px 30%;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px #babdbd;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    }
+    
+    .section1 {
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    .section1 h3 {
+        padding-left: 20px;
+        font-size: 26px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .btn__selection {
+        background-color: whitesmoke;
+        padding-top: 30px;
+        text-align: center;
+        font-weight: bold;
+        height: 50px;
+        width: 30%;
+        margin: 5px 5% 15px 5%;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px #babdbd;
+    }
+    
+    .btn__selection:hover {
+        background-color: rgb(255, 203, 255);
+        cursor: pointer;
+    }
+    
+    .btn__selection i {
+        padding-right: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        max-height: 1000px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        padding: 10px 3%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        grid-template-areas: 
+        "rest1 rest2"
+        "rest3 rest4"
+    }
+
+    .menu-grid-container {
+        display: grid;
+        max-height: 500px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        padding: 10px 3%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        grid-template-areas: 
+        "entrees mains desserts";
+    }
+    
+    .btn__menu {
+        background-color: rgb(250, 250, 250);
+        border-radius: 15px;
+        padding-left: 5px;
+        box-shadow: 5px 5px 20px #babdbd;
+        position: relative;
+        z-index: 1;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+    
+     .fadeIn {
+         animation-name: fadeIn;
+         animation-duration: 3s;
+     }
+    
+    .btn__menu::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #99E2D0;
+        z-index: -1;
+        transition: transform 200ms ease-in;
+    }
+    
+    .btn__menu--1::after {
+        transform: scaleX(0);
+        transform-origin: right;
+        border-radius: 1px 15px 15px 1px;
+    }
+    
+    .btn__menu--1:hover::after {
+        transform: scaleX(0.1);
+    }
+    
+        
+    .btn__order {
+        font-size: 24px;
+        color: white;
+        height: 40px;
+        border-radius: 25px;
+        text-align: center;
+        padding-top: 11px;
+        width: 50%;
+        margin: 15px 25% 50px 25%;
+        box-shadow: 5px 5px 20px #babdbd;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    }
+    
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 3px 4px 0 #9a9c9a;
+        transition: 0.3s;
+        padding: 0;
+        margin: 10px;
+        overflow: hidden;
+        height: 400px;
+    }
+    
+    .fa-2x {
+        padding-left: 300px;
+        animation: slideIn 3s;
+    }
+    
+    @keyframes slideIn {
+            from { transform: scaleX(0); }
+            to   { transform: scaleX(1); }
+          }
+    
+    .card--third .nyami{
+        height: 70%;
+        justify-content: stretch;
+    }
+    
+    .nyami {
+        width: 100%;
+        height: 70%;
+    }
+    
+    .container2 {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    
+    .container2 h4, p {
+        color: black;
+    }
+    
+    .section2 h3 {
+        padding-left: 20px;
+        font-size: 26px;
+    }
+    
+    .section2 a {
+        text-decoration: none;
+    }
+    
+    .footer {
+        background-color: rgb(26, 25, 25);
+        color: rgb(235, 227, 227);
+    }
+    
+    .footer ul {
+        list-style: none;
+        padding: 5px 0px 15px 20px;
+        line-height: 25px;
+    }
+    
+    ul .fa-utensils {
+        padding-right: 11px;
+    }
+    
+    ul .fa-hands-helping {
+        padding-right: 5px;
+    }
+    
+    ul a {
+        text-decoration: none;
+        color: rgb(235, 227, 227);
+    }
+    
+    .footer h5 {
+        color: rgb(235, 227, 227);
+        font-family: 'Shrikhand';
+        font-size: 22px;
+        padding: 15px 0 5px 20px;
+        margin: 0;
+    }
+    }
+
 }
