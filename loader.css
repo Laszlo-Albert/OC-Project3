@@ -1,32 +1,69 @@
-.loader {
+#loader {
     margin: auto;
     width: 40px;
     height: 40px;
     border: 5px solid #ecf0f0;
-    border-radius: 10px;
+    border-radius: 50%;
     border-top-color: blueviolet;
-    animation: spin 1s infinite;
+    /* animation-name: spin;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+    animation: spin 4.5s linear 1;
 }
 
 @keyframes spin {
-    100% {
+    0% {
         transform: rotate(360deg);
     }
+    100% {
+        height: 0;
+        padding: 0;
+        width: 0;
+        margin: 0;
+    }
+    
 }
 
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
 
-.universe {
-opacity: 0;
-animation: fadeIn 3s;
-animation-delay: 5s;
-animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-from { opacity: 0; }
-to { opacity: 1; }
-}
+.main-container {
+        height: 0;
+        overflow: hidden;
+       -moz-animation: slide 1s ease 3.5s forwards;
+       -webkit-animation: slide 1s ease 3.5s forwards;
+       -o-animation: slide 1s ease 3.5s forwards;
+       -ms-animation: slide 1s ease 3.5s forwards;
+        animation: slide 1s ease 3.5s forwards;
+    }
+    
+    
+    @-moz-keyframes slide /* Firefox */
+    {
+    from {height: 0;}
+    to {height: 100%;}
+    }
+    
+    @-webkit-keyframes slide /* Safari and Chrome */
+    {
+    from {height: 0;}
+    to {height: 100%;}
+    }
+    
+    @-o-keyframes slide /* Opera */
+    {
+    from {height: 0;}
+    to {height: 100%;}
+    }
+    
+    @-ms-keyframes slide /* IE10 */
+    {
+    from {height: 0;}
+    to {height: 100%;}
+    }
+    
+    @keyframes slide
+    {
+    from {height: 0;}
+    to {height: 100%;}
+    }
+    

@@ -174,7 +174,7 @@ h3 {
 
  .fadeIn {
      animation-name: fadeIn;
-     animation-duration: 3s;
+     animation-duration: 4s;
  }
 
 .btn__menu::after {
@@ -223,15 +223,10 @@ h3 {
     height: 400px;
 }
 
-.fa-2x {
+.fas-2x {
     padding-left: 300px;
-    animation: slideIn 3s;
+    color: #222;
 }
-
-@keyframes slideIn {
-        from { transform: scaleX(0); }
-        to   { transform: scaleX(1); }
-      }
 
 .card--third .nyami{
     height: 70%;
@@ -485,7 +480,7 @@ ul a {
     
      .fadeIn {
          animation-name: fadeIn;
-         animation-duration: 3s;
+         animation-duration: 4s;
      }
     
     .btn__menu::after {
@@ -812,7 +807,7 @@ ul a {
     
      .fadeIn {
          animation-name: fadeIn;
-         animation-duration: 3s;
+         animation-duration: 4s;
      }
     
     .btn__menu::after {
