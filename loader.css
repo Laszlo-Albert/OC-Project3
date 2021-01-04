@@ -5,35 +5,37 @@
     border: 5px solid #ecf0f0;
     border-radius: 50%;
     border-top-color: blueviolet;
-    /* animation-name: spin;
-    animation-duration: 3.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; */
-    animation: spin 4.5s linear 1;
+    animation-name: spin;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation: spin 4.5s linear infinite; */
 }
 
 @keyframes spin {
-    0% {
+    from {
         transform: rotate(360deg);
     }
-    100% {
+
+    to {
         height: 0;
         padding: 0;
         width: 0;
-        margin: 0;
+        margin: 0 auto;
+        opacity: 0;
     }
-    
 }
 
 
 .main-container {
         height: 0;
         overflow: hidden;
-       -moz-animation: slide 1s ease 3.5s forwards;
-       -webkit-animation: slide 1s ease 3.5s forwards;
-       -o-animation: slide 1s ease 3.5s forwards;
-       -ms-animation: slide 1s ease 3.5s forwards;
-        animation: slide 1s ease 3.5s forwards;
+       -moz-animation: slide 1s ease 2.5s forwards;
+       -webkit-animation: slide 1s ease 2.5s forwards;
+       -o-animation: slide 1s ease 2.5s forwards;
+       -ms-animation: slide 1s ease 2.5s forwards;
+        animation: slide 1s ease 2.5s forwards;
     }
     
     

@@ -113,7 +113,7 @@ h3 {
 }
 
 .btn__explore {
-    padding: 10px;
+    padding: 12px 5px 5px 5px;
     text-align: center;
     color: white;
     align-content: center;
@@ -123,6 +123,12 @@ h3 {
     border-radius: 20px;
     box-shadow: 5px 5px 20px #babdbd;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+.btn__explore:hover {
+    background: linear-gradient(to bottom right, #fd8ddd, #a97be2);
+    box-shadow: 5px 5px 20px #a3a5a5;
+    cursor: pointer;
 }
 
 .section1 {
@@ -211,6 +217,12 @@ h3 {
     margin: 15px 25% 50px 25%;
     box-shadow: 5px 5px 20px #babdbd;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+.btn__order:hover {
+    background: linear-gradient(to bottom right, #fd8ddd, #a97be2);
+    box-shadow: 5px 5px 20px #a3a5a5;
+    cursor: pointer;
 }
 
 .card {
@@ -416,6 +428,12 @@ ul a {
         box-shadow: 5px 5px 20px #babdbd;
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     }
+
+    .btn__explore:hover {
+        background: linear-gradient(to bottom right, #fd8ddd, #a97be2);
+        box-shadow: 5px 5px 20px #a3a5a5;
+        cursor: pointer;
+    }
     
     .section1 {
         display:flex;
@@ -517,6 +535,12 @@ ul a {
         margin: 15px 25% 50px 25%;
         box-shadow: 5px 5px 20px #babdbd;
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    }
+
+    .btn__order:hover {
+        background: linear-gradient(to bottom right, #fd8ddd, #a97be2);
+        box-shadow: 5px 5px 20px #a3a5a5;
+        cursor: pointer;
     }
     
     .card {
@@ -726,6 +750,12 @@ ul a {
         box-shadow: 5px 5px 20px #babdbd;
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     }
+
+    .btn__explore:hover {
+        background: linear-gradient(to bottom right, #fd8ddd, #a97be2);
+        box-shadow: 5px 5px 20px #a3a5a5;
+        cursor: pointer;
+    }
     
     .section1 {
         display:flex;
@@ -844,6 +874,12 @@ ul a {
         margin: 15px 25% 50px 25%;
         box-shadow: 5px 5px 20px #babdbd;
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    }
+
+    .btn__order:hover {
+        background: linear-gradient(to bottom right, #fd8ddd, #a97be2);
+        box-shadow: 5px 5px 20px #a3a5a5;
+        cursor: pointer;
     }
     
     .card {
