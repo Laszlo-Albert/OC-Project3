@@ -10,7 +10,7 @@
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    /* animation: spin 4.5s linear infinite; */
+    /* animation: spin 2.5s linear infinite; - Shorthand - */
 }
 
 @keyframes spin {
